@@ -1,28 +1,37 @@
+# GoBarber
+
+### Example learned application
+
+Made in node, express, sequelize, jwt, yup, sucrase and some other stuff
+
 ### Requirements:
 
-- Node v10+
-- Yarn v1.17+
-- Docker 19+
+- [Node v10+](https://nodejs.org)
+- [Yarn v1.17+](https://yarnpkg.com)
+- [Docker 19+](https://docs.docker.com/install)
 
-# Docker
+### Docker
 
-- docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+```
+docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+```
 
-- docker start database
+To start|stop...
 
-To stop...
+```
+docker start|stop database
+```
 
-- docker stop database
+### start dev
 
-# start dev
+```
+yarn install
+yarn dev
+```
 
-- yarn install
+### start debugging
 
-- yarn dev
-
-# start debugging
-
-- launch.json (vscode)
+- add in vscode launch.json
 
 ```json
 "configurations": [
@@ -35,22 +44,36 @@ To stop...
 ]
 ```
 
-- yarn debug
+Run:
 
-# Sequelize commands
+```
+yarn debug
+```
+
+And then, start debug (Launch Program)
+
+### Sequelize commands
 
 To create a new migration
 
-- yarn sequelize migration:create --name=migration-name
+```
+yarn sequelize migration:create --name=migration-name
+```
 
 To run migration
 
-- yarn sequelize db:migrate
+```
+yarn sequelize db:migrate
+```
 
 To undo the last migration
 
-- yarn sequelize db:migrate:undo
+```
+yarn sequelize db:migrate:undo
+```
 
 To undo all migrations
 
-- yarn sequelize db:migrate:undo:all
+```
+yarn sequelize db:migrate:undo:all
+```
