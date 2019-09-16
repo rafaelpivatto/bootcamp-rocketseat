@@ -41,7 +41,7 @@ To stop...
 
 To create a new migration
 
-- yarn sequelize migration:create --name=<migration-name>
+- yarn sequelize migration:create --name=migration-name
 
 To run migration
 
