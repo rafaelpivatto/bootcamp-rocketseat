@@ -13,7 +13,7 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Modulo 02",
+      "name": "GoBarber",
       "protocol": "inspector"
     },
     {
