@@ -10,26 +10,26 @@ Made in node, express, sequelize, jwt, yup, sucrase and some other stuff
 - [Yarn v1.17+](https://yarnpkg.com)
 - [Docker 19+](https://docs.docker.com/install)
 
-### Docker
+### To run databse docker image
 
 ```
 docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
 ```
 
-To start|stop...
+To start or stop container...
 
 ```
 docker start|stop database
 ```
 
-### start dev
+### To start dev
 
 ```
 yarn install
 yarn dev
 ```
 
-### start debugging
+### To start in debug mode
 
 - add in vscode launch.json
 
@@ -52,7 +52,7 @@ yarn debug
 
 And then, start debug (Launch Program)
 
-### Sequelize commands
+### Some sequelize commands
 
 To create a new migration
 
