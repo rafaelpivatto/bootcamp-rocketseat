@@ -10,7 +10,7 @@ Made in node, express, sequelize, jwt, yup, sucrase and some other stuff
 - [Yarn v1.17+](https://yarnpkg.com)
 - [Docker 19+](https://docs.docker.com/install)
 
-### To run databse docker image
+### To run database docker image
 
 ```
 docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
@@ -22,10 +22,23 @@ To start or stop container...
 docker start|stop database
 ```
 
-### To start dev
+### To start
+
+To install node dependencies
 
 ```
 yarn install
+```
+
+To create database
+
+```
+yarn sequelize db:migrate
+```
+
+To start an application in dev mode
+
+```
 yarn dev
 ```
 
